@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Atalhos do Visual Studio Code</title>
+	<style>
+		:root { color-scheme: dark; --bg: #0d1117; --card: #161b22; --line: #30363d; --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; }
+		* { box-sizing: border-box; }
+		body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #0d1117, #172554); color: var(--text); }
+		main { width: min(1100px, 92%); margin: auto; padding: 56px 0; }
+		header { text-align: center; margin-bottom: 34px; }
+		h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.4rem); }
+		header p { color: var(--muted); font-size: 1.1rem; }
+		.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+		section { background: rgba(22, 27, 34, .94); border: 1px solid var(--line); border-radius: 12px; padding: 22px; box-shadow: 0 8px 24px #0004; }
+		h2 { color: var(--accent); font-size: 1.2rem; margin: 0 0 16px; }
+		.shortcut { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 11px 0; border-top: 1px solid var(--line); }
+		.shortcut:first-of-type { border-top: 0; }
+		.shortcut span { color: #c9d1d9; }
+		kbd { white-space: nowrap; padding: 5px 9px; border: 1px solid #6e7681; border-bottom-width: 3px; border-radius: 6px; background: #21262d; color: #f0f6fc; font: 600 .85rem Consolas, monospace; }
+		footer { text-align: center; color: var(--muted); margin-top: 30px; font-size: .9rem; }
+	</style>
 </head>
 <body>
-    
+	<main>
+		<header>
+			<h1>Atalhos do Visual Studio Code</h1>
+			<p>Aumente sua produtividade com os comandos mais usados.</p>
+		</header>
+
+		<div class="grid">
+			<section>
+				<h2>Arquivos e edição</h2>
+				<div class="shortcut"><span>Nova janela</span><kbd>Ctrl + Shift + N</kbd></div>
+				<div class="shortcut"><span>Abrir arquivo</span><kbd>Ctrl + O</kbd></div>
+				<div class="shortcut"><span>Salvar arquivo</span><kbd>Ctrl + S</kbd></div>
+				<div class="shortcut"><span>Fechar editor</span><kbd>Ctrl + W</kbd></div>
+				<div class="shortcut"><span>Desfazer / refazer</span><kbd>Ctrl + Z / Y</kbd></div>
+				<div class="shortcut"><span>Formatar documento</span><kbd>Shift + Alt + F</kbd></div>
+			</section>
+
+			<section>
+				<h2>Navegação</h2>
+				<div class="shortcut"><span>Paleta de comandos</span><kbd>Ctrl + Shift + P</kbd></div>
+				<div class="shortcut"><span>Ir para arquivo</span><kbd>Ctrl + P</kbd></div>
+				<div class="shortcut"><span>Ir para linha</span><kbd>Ctrl + G</kbd></div>
+				<div class="shortcut"><span>Ir para definição</span><kbd>F12</kbd></div>
+				<div class="shortcut"><span>Alternar entre editores</span><kbd>Ctrl + 1 / 2 / 3</kbd></div>
+				<div class="shortcut"><span>Mostrar explorador</span><kbd>Ctrl + Shift + E</kbd></div>
+			</section>
+
+			<section>
+				<h2>Pesquisa e código</h2>
+				<div class="shortcut"><span>Buscar no arquivo</span><kbd>Ctrl + F</kbd></div>
+				<div class="shortcut"><span>Substituir</span><kbd>Ctrl + H</kbd></div>
+				<div class="shortcut"><span>Buscar em arquivos</span><kbd>Ctrl + Shift + F</kbd></div>
+				<div class="shortcut"><span>Comentar linha</span><kbd>Ctrl + /</kbd></div>
+				<div class="shortcut"><span>Duplicar linha</span><kbd>Shift + Alt + ↓</kbd></div>
+				<div class="shortcut"><span>Mover linha</span><kbd>Alt + ↑ / ↓</kbd></div>
+			</section>
+
+			<section>
+				<h2>Terminal e depuração</h2>
+				<div class="shortcut"><span>Exibir terminal</span><kbd>Ctrl + `</kbd></div>
+				<div class="shortcut"><span>Novo terminal</span><kbd>Ctrl + Shift + `</kbd></div>
+				<div class="shortcut"><span>Iniciar depuração</span><kbd>F5</kbd></div>
+				<div class="shortcut"><span>Executar sem depurar</span><kbd>Ctrl + F5</kbd></div>
+				<div class="shortcut"><span>Adicionar breakpoint</span><kbd>F9</kbd></div>
+				<div class="shortcut"><span>Parar depuração</span><kbd>Shift + F5</kbd></div>
+			</section>
+		</div>
+		<footer>Disponível para Windows/Linux • No macOS, substitua Ctrl por ⌘ quando aplicável.</footer>
+	</main>
 </body>
 </html>
